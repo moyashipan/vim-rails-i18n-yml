@@ -5,7 +5,8 @@ i18n用yamlが長くなりすぎていませんか？ 今いる行のpathを調�
 
 ### CONFIG EXAMPLE 
 
-```
+```vim
+" .vim/ftplugin/yaml.vim
 set tabstop=2
 command! -nargs=0 YamlPwd call yml#search('.')
 command! -nargs=1 YamlJump call yml#jump(<f-args>)
