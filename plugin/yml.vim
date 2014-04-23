@@ -31,6 +31,8 @@ function! yml#jump(path) range
 
     let indent = indent + &tabstop
   endfor
+
+  call cursor(min_line, indent - 1)
 endfunction
 
 function! s:get_key(line_str)
